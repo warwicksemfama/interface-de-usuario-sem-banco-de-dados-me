@@ -22,11 +22,11 @@ def toggle_senha():
     global senha_visivel
     if senha_visivel:
         campo_senha.configure(show="*")
-        botao_ver.configure(text="🔒")
+        botao_ver.configure(text="ver")
         senha_visivel = False
     else:
         campo_senha.configure(show="")
-        botao_ver.configure(text="🔓")
+        botao_ver.configure(text="esconder")
         senha_visivel = True
 
 #tela principal
@@ -56,7 +56,7 @@ campo_senha = ctk.CTkEntry(app, placeholder_text="digite sua senha", show="*")
 campo_senha.pack(pady=10)
 
 # botão mostrar/esconder
-botao_ver = ctk.CTkButton(app, text="🔒", command=toggle_senha)
+botao_ver = ctk.CTkButton(app, text="ver", command=toggle_senha)
 botao_ver.pack(pady=5)
 
 #button
