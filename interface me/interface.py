@@ -14,6 +14,21 @@ def validar_login():
         resultado_login.configure(text="login bem sucedido!", text_color="green")
     else:        resultado_login.configure(text="usuario ou senha incorretos", text_color="red")
 
+    # variável global
+senha_visivel = False
+
+    # função mostrar/esconder senha
+def toggle_senha():
+    global senha_visivel
+    if senha_visivel:
+        campo_senha.configure(show="*")
+        botao_ver.configure(text="🔒")
+        senha_visivel = False
+    else:
+        campo_senha.configure(show="")
+        botao_ver.configure(text="🔓")
+        senha_visivel = True
+
 #tela principal
 
 app =ctk.CTk()
@@ -39,6 +54,10 @@ label_senha.pack(pady=10)
 
 campo_senha = ctk.CTkEntry(app, placeholder_text="digite sua senha", show="*")
 campo_senha.pack(pady=10)
+
+# botão mostrar/esconder
+botao_ver = ctk.CTkButton(app, text="🔒", command=toggle_senha)
+botao_ver.pack(pady=5)
 
 #button
 
