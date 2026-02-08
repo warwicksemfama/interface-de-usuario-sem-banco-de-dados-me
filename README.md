@@ -1,4 +1,4 @@
-# interface-de-usuario-sem-banco-de-dados
+# interface de usuario sem banco de dados
 Este projeto é uma tela de login gráfica em Python, desenvolvida com a biblioteca CustomTkinter.
 O sistema permite que o usuário insira usuário e senha, validando as credenciais e exibindo mensagens de sucesso ou erro.
 
