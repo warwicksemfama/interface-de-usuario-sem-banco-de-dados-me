@@ -7,16 +7,17 @@ O sistema permite que o usuário insira usuário e senha, validando as credencia
 - Python 3.x
 - CustomTkinter (interface gráfica moderna baseada em Tkinter)
 
-## Baixe e instale o Python em:
+## Baixe e instale o Python e o CustomTkinter em:
  - https://www.python.org
 
  - https://customtkinter.tomschimansky.com/
 
-### Credenciais de Teste
+## Credenciais de Teste
 
 No código, as credenciais válidas são:
 
 Usuário: pedro
+
 Senha: 3535
 
  # Funcionalidades
